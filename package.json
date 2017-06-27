@@ -1,5 +1,5 @@
 {
-  "name": "url-parse-password",
+  "name": "url-parse-auth",
   "main": "index.js",
   "version": "1.0.0",
   "description": "Parse the password and username out of a url",
@@ -14,14 +14,10 @@
     "test": "standard && tape test.js"
   },
   "keywords": [
-    "Url parse password."
+    "url", "parse", "password"
   ],
   "devDependencies": {
     "tape": "^4.0.0",
     "standard": "^7.0.0"
-  },
-  "files": [
-    "index.js",
-    "test.js"
-  ]
+  }
 }
