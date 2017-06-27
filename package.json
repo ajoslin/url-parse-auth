@@ -1,0 +1,27 @@
+{
+  "name": "url-parse-password",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Parse the password and username out of a url",
+  "license": "MIT",
+  "repository": "ajoslin/url-parse-password",
+  "author": {
+    "name": "Andrew Joslin",
+    "email": "andrewtjoslin@gmail.com",
+    "url": "ajoslin.com"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "Url parse password."
+  ],
+  "devDependencies": {
+    "tape": "^4.0.0",
+    "standard": "^7.0.0"
+  },
+  "files": [
+    "index.js",
+    "test.js"
+  ]
+}
