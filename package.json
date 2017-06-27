@@ -1,7 +1,7 @@
 {
   "name": "url-parse-auth",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse the password and username out of a url",
   "license": "MIT",
   "repository": "ajoslin/url-parse-password",
@@ -14,7 +14,9 @@
     "test": "standard && tape test.js"
   },
   "keywords": [
-    "url", "parse", "password"
+    "url",
+    "parse",
+    "password"
   ],
   "devDependencies": {
     "tape": "^4.0.0",
