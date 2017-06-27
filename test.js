@@ -12,6 +12,10 @@ test(function (t) {
     user: '',
     password: 'bar'
   })
+  t.deepEqual(parse('https://foo:@baz.com'), {
+    user: 'foo',
+    password: ''
+  })
   t.deepEqual(parse('https://baz.com'), {
     user: undefined,
     password: undefined
