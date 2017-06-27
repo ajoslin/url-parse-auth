@@ -1,44 +1,27 @@
-# url-parse-password [![Build Status](https://travis-ci.org/ajoslin/url-parse-password.svg?branch=master)](https://travis-ci.org/ajoslin/url-parse-password)
+# url-parse-auth [![Build Status](https://travis-ci.org/ajoslin/url-parse-password.svg?branch=master)](https://travis-ci.org/ajoslin/url-parse-password)
 
-> Parse the password and username out of a url
+> Parse the password and username out of a url. Do what takes two steps and a string.split with `require('url')`.
 
 
 ## Install
 
 ```
-$ npm install --save url-parse-password
+$ npm install --save url-parse-auth
 ```
 
 
 ## Usage
 
 ```js
-var urlParsePassword = require('url-parse-password')
+var urlParseAuth = require('url-parse-auth')
 
-urlParsePassword('input')
-//=> output
+urlParseAuth('https://user:pass@baz.com')
+//=> {user: 'user', pass: 'pass'}
 ```
 
 ## API
 
-#### `urlParsePassword(input, [options])` -> `output`
-
-##### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-##### options
-
-###### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
-
+#### `urlParsePassword(url)` -> `{user, password}`
 
 ## License
 
