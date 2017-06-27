@@ -1,6 +1,6 @@
 # url-parse-auth [![Build Status](https://travis-ci.org/ajoslin/url-parse-password.svg?branch=master)](https://travis-ci.org/ajoslin/url-parse-password)
 
-> Parse the password and username out of a url. Do what takes two steps and a string.split with `require('url')`.
+> Parse the password and user out of a url. Do in one step what would take two steps and a string.split with `require('url')`.
 
 
 ## Install
@@ -22,6 +22,9 @@ urlParseAuth('https://user:pass@baz.com')
 ## API
 
 #### `urlParsePassword(url)` -> `{user, password}`
+
+Both `user` and `password` will be undefined if the url has no auth section.
+
 
 ## License
 
